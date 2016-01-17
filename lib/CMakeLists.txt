@@ -58,23 +58,23 @@ install(TARGETS gnuradio-scada
 ########################################################################
 # Build and register unit test
 ########################################################################
-include(GrTest)
+#include(GrTest)
 
-include_directories(${CPPUNIT_INCLUDE_DIRS})
+#include_directories(${CPPUNIT_INCLUDE_DIRS})
 
-list(APPEND test_scada_sources
-    ${CMAKE_CURRENT_SOURCE_DIR}/test_scada.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_scada.cc
-)
+#list(APPEND test_scada_sources
+#    ${CMAKE_CURRENT_SOURCE_DIR}/test_scada.cc
+#    ${CMAKE_CURRENT_SOURCE_DIR}/qa_scada.cc
+#)
 
-add_executable(test-scada ${test_scada_sources})
+#add_executable(test-scada ${test_scada_sources})
 
-target_link_libraries(
-  test-scada
-  ${GNURADIO_RUNTIME_LIBRARIES}
-  ${Boost_LIBRARIES}
-  ${CPPUNIT_LIBRARIES}
-  gnuradio-scada
-)
+#target_link_libraries(
+#  test-scada
+#  ${GNURADIO_RUNTIME_LIBRARIES}
+#  ${Boost_LIBRARIES}
+#  ${CPPUNIT_LIBRARIES}
+#  gnuradio-scada
+#)
 
-GR_ADD_TEST(test_scada test-scada)
+#GR_ADD_TEST(test_scada test-scada)
