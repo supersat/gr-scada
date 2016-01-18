@@ -18,9 +18,5 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    scada_duobinary_clock_recovery_mm_ff.xml
-    scada_duobinary_slicer.xml
-    scada_mdsx710_decode.xml
-    scada_mdsx710_decode_test.xml
-    scada_mdsx710_stream_decoder.xml DESTINATION share/gnuradio/grc/blocks
+    scada_mdsx710_decode.xml DESTINATION share/gnuradio/grc/blocks
 )
