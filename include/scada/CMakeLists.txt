@@ -22,9 +22,5 @@
 ########################################################################
 install(FILES
     api.h
-    duobinary_clock_recovery_mm_ff.h
-    duobinary_slicer.h
-    mdsx710_decode.h
-    mdsx710_decode_test.h
-    mdsx710_stream_decoder.h DESTINATION include/scada
+    mdsx710_decode.h DESTINATION include/scada
 )
